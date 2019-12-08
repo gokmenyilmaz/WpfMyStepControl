@@ -18,7 +18,6 @@
 
     <Grid>
 
-
         <ListBox ItemsSource="{Binding Model.Steps}" 
                  SelectedItem="{Binding Model.SelectedStep,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
                  HorizontalAlignment="Left" Height="550" Margin="35,80,0,0"
@@ -32,7 +31,7 @@
                         </DataTrigger>
                     </DataTemplate.Triggers>
 
-                    <StackPanel Width="300" Background="#FFF5F5F5"  HorizontalAlignment="Stretch">
+                    <StackPanel  Width="300" Background="#FFF5F5F5"  HorizontalAlignment="Stretch">
                         <Rectangle Margin="4" HorizontalAlignment="Center" Fill="{Binding OnayDurum,Converter={StaticResource SurecColorConverter }}" 
                                    MinHeight="{Binding LineHeight}" Width="3" />
 
